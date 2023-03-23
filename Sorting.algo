@@ -1,0 +1,19 @@
+ALGORITHM SimpleSortingList
+VAR
+    VAR 
+    HL : ARRAY_OF INTEGER[n]
+    R,Carte,P:INTEGER:=0
+BEGIN
+    read(Carte);
+    WHILE (Carte>HL[P]) DO
+        P:P+1;
+    END_WHILE
+    R:=HL[p];
+    HL[P]:=Carte;
+    P:=P+1;
+    FOR j FROM P TO n-2 STEP 1  DO
+        Carte:=LH[j];
+        LH[j]:=R;
+    END_FOR
+    LH[n]:=Carte;
+END
